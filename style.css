@@ -1,5 +1,4 @@
 
-
 div .navbarLogo {
     display: flex;
     flex-direction: column;
@@ -24,30 +23,70 @@ nav ul {
 .jour{
     margin-left:auto ;
     margin-right:auto ;
+
     width: 300px;
     transition-duration: 0.5s;
 }
-.jour:hover{
+
+.jour:hover {
     padding: 5px;
 }
-.jour>div{
+
+.jour>div {
     display: flex;
     justify-content: space-between;
     transition-duration: 0.3s;
     padding: 5px;
     font-weight: bold;
 }
-.jour>div:hover{
+
+.jour>div:hover {
     background-color: rgb(254, 255, 236);
     color: rgb(101, 196, 101);
     padding: 10px;
 }
-
-.column{
-    display:flex;
+.flexMENTION{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border-top: orange solid 1px;
+    border-bottom: orange solid 1px;
+    margin-bottom: 100px;
+}
+.column {
+    display: flex;
     flex-direction: column;
 }
+.columnMention{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.footerContact{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.stay{
+    margin-top: 50px;
+    padding-top: 50px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;  
+    border-top: orange solid 1px;
 
+}
+
+#fat {
+    margin-top: 50px;
+    font-size: xx-large;
+    padding-bottom: 50px;
+}
 
 
 h2 {
@@ -130,5 +169,3 @@ font-size: 14px;
     background-color: darkgreen;
     border-color: darkgreen;
 }
-
-

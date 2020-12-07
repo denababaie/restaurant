@@ -9,10 +9,13 @@ if (m < 10) {
     m = "0" + m
 }
 day.addEventListener("mouseover", function () {
-    if (ladate.getDay() == 1) {
+    function closed() {
+        document.querySelector("#fat > u").innerHTML = "We are closed"
+        document.querySelector("#fat > u").style.fontSize = " 40px"
         day.style.background = " red"
-        document.querySelector("#fat > u").innerHTML ="We are closed"
-        document.querySelector("#fat > u").style.fontSize =" 40px"
+    }
+    if (ladate.getDay() == 1) {
+        closed()
     } else if (ladate.getDay() == 2) {
         day.style.background = " rgb(101, 196, 101"
     } else if (ladate.getDay() == 3) {
@@ -24,19 +27,13 @@ day.addEventListener("mouseover", function () {
     } else if (ladate.getDay() == 6) {
         day.style.background = " rgb(101, 196, 101"
     } else if (ladate.getDay() == 7) {
-        day.style.background = " red"
-        document.querySelector("#fat > u").innerHTML ="We are closed"
-        document.querySelector("#fat > u").style.fontSize =" 40px"
+        closed()
     }
     //____________________________
     else if (h < 11) {
-        day.style.background = " red"
-        document.querySelector("#fat > u").innerHTML ="We are closed"
-        document.querySelector("#fat > u").style.fontSize =" 40px"
+        closed()
     } else if (h < 11 && m < 30) {
-        day.style.background = " red"
-        document.querySelector("#fat > u").innerHTML ="We are closed"
-        document.querySelector("#fat > u").style.fontSize =" 40px"
+        closed()
     } else if (h == 11 && m > 30) {
         day.style.background = " rgb(101, 196, 101"
     } else if (h >= 12 && h <= 14) {
@@ -44,15 +41,12 @@ day.addEventListener("mouseover", function () {
     } else if (h >= 18) {
         day.style.background = " rgb(101, 196, 101"
     } else if (h >= 22 && m >= 30) {
-        day.style.background = " red"
-        document.querySelector("#fat > u").innerHTML ="We are closed"
-        document.querySelector("#fat > u").style.fontSize =" 40px"
+        closed()
     }
 })
 day.addEventListener("mouseout", function () {
     day.style.background = "#231D21 "
-    day.style.color ="white"
-    document.querySelector("#fat > u").innerHTML ="Opening hours"
-    document.querySelector("#fat > u").style.fontSize =" xx-large"
+    day.style.color = "white"
+    document.querySelector("#fat > u").innerHTML = "Opening hours"
+    document.querySelector("#fat > u").style.fontSize = " xx-large"
 })
-

@@ -1,32 +1,38 @@
-body{
-    background-color: #231D21 ;
+body {
+    background-color: #231D21;
     color: white;
 }
+
 div .navbarLogo {
     display: flex;
     flex-direction: column;
     background-color: orange;
     width: 100%;
+
 }
+
 img {
     display: flex;
     flex-direction: column;
     width: 30%;
     height: auto;
 }
-nav{
+
+nav {
     display: flex;
     flex-direction: column;
+
 }
+
 nav ul {
     display: flex;
     align-content: flex-end;
+
 }
 
-.jour{
-    margin-left:auto ;
-    margin-right:auto ;
-
+.jour {
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     transition-duration: 0.5s;
 }
@@ -48,33 +54,39 @@ nav ul {
     color: rgb(101, 196, 101);
     padding: 10px;
 }
-.flexMENTION{
+
+.flexMENTION {
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    border-top: #B48A78  solid 3px;
-    border-bottom: #B48A78  solid 3px;
+    border-top: #B48A78 solid 3px;
+    border-bottom: #B48A78 solid 3px;
     margin-bottom: 100px;
 }
+
 .column {
     display: flex;
     flex-direction: column;
 }
-.columnMention{
+
+.columnMention {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
-#buttonMail{
-    background-color:  #B48A78;
+
+#buttonMail {
+    background-color: #B48A78;
     padding: 7px;
 }
-#inputMail{
+
+#inputMail {
     padding: 7px;
 }
-.footerContact{
+
+.footerContact {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -82,23 +94,26 @@ nav ul {
     justify-content: space-around;
     margin-bottom: 100px;
 }
-.titreSERVICE{
+
+.titreSERVICE {
     font-size: large;
     font-weight: bolder;
 }
-.stay{
+
+.stay {
     margin-top: 50px;
     padding-top: 50px;
     width: fit-content;
     margin-left: auto;
-    margin-right: auto;  
-    border-top: #B48A78  solid 3px;
+    margin-right: auto;
+    border-top: #B48A78 solid 3px;
     font-size: large;
     font-weight: bolder;
 
 }
-hr{
-   background-color: #553731 ;
+
+hr {
+    background-color: #553731;
 }
 
 #fat {
@@ -124,7 +139,7 @@ h3 {
     font-family: 'Playfair Display SC', serif;
     font-size: 40px;
     text-align: center;
-  
+
 }
 
 /*h4 {
@@ -143,28 +158,28 @@ display: inline-block;
 
 }
 
-.menu  {
-flex-direction: column;
-padding-left: 30px;
-padding-right: 20px;
-padding-bottom: 100px;
+.menu {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 100px;
 }
 
 
 .row {
-padding-left: 79px;
+    padding-left: 79px;
 }
 
 
 .starters {
-padding-left: 165px;
+    padding-left: 165px;
 }
 
 .desserts {
     padding-left: 165px;
-    }
+}
 
-.btn.btn-primary{
+.btn.btn-primary {
     color: white;
     background-color: black;
     border-color: black;
@@ -172,17 +187,19 @@ padding-left: 165px;
     align-content: center;
 
 }
+
 .card-text {
-font-family: 'Playfair Display', serif;
-font-size: 14px;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
 }
-.card-title{
+
+.card-title {
     font-family: 'Playfair Display', serif;
 }
 
 .card:hover {
     transform: scale(1.04);
-} 
+}
 
 .btn.btn-primary:hover {
     background-color: darkgreen;

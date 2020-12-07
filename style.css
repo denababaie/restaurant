@@ -15,8 +15,9 @@ nav{
     display: flex;
     flex-direction: column;
 }
-nav ul {
+nav li {
     display: flex;
+    flex-direction: column;
     align-content: flex-end;
 }
 

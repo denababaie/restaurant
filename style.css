@@ -1,4 +1,26 @@
 
+
+div .navbarLogo {
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    width: 100%;
+}
+img {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+}
+nav ul {
+    display: flex;
+    align-content: flex-end;
+}
+
 .jour{
     margin-left:auto ;
     margin-right:auto ;
@@ -28,14 +50,85 @@
 
 
 
-nav{
-    display: flex;
-    flex-direction: column;
-    margin-left: 200px;
+h2 {
+    padding-top: 100px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 95px;
+    text-align: center;
+    padding-bottom: -60px;
+
 }
-nav ul {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
+
+
+h3 {
+    padding-bottom: 40px;
+    padding-top: 100px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
+    text-align: center;
+  
 }
+
+/*h4 {
+    font-size: 100px;
+    font-family: 'Playfair Display SC', serif;
+    letter-spacing: 42px;
+    color: seagreen;
+    transform: rotate(-90deg);
+margin-right: 1200px;
+margin-top: -90px;
+display: inline-block; 
+}*/
+
+.card {
+    margin-right: 30px;
+
+}
+
+.menu  {
+flex-direction: column;
+padding-left: 30px;
+padding-right: 20px;
+padding-bottom: 100px;
+}
+
+
+.row {
+padding-left: 79px;
+}
+
+
+.starters {
+padding-left: 165px;
+}
+
+.desserts {
+    padding-left: 165px;
+    }
+
+.btn.btn-primary{
+    color: white;
+    background-color: black;
+    border-color: black;
+    font-family: 'Playfair Display SC', serif;
+    align-content: center;
+
+}
+.card-text {
+font-family: 'Playfair Display', serif;
+font-size: 14px;
+}
+.card-title{
+    font-family: 'Playfair Display', serif;
+}
+
+.card:hover {
+    transform: scale(1.04);
+} 
+
+.btn.btn-primary:hover {
+    background-color: darkgreen;
+    border-color: darkgreen;
+}
+
 

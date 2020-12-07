@@ -1,3 +1,4 @@
+
 .jour {
     margin-left: auto;
     margin-right: auto;
@@ -22,13 +23,42 @@
     color: rgb(101, 196, 101);
     padding: 10px;
 }
-
+.flexMENTION{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border-top: orange solid 1px;
+    border-bottom: orange solid 1px;
+    margin-bottom: 100px;
+}
 .column {
     display: flex;
     flex-direction: column;
 }
+.columnMention{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.footerContact{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+.stay{
+    margin-top: 50px;
+    padding-top: 50px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;  
+    border-top: orange solid 1px;
 
-
+}
 
 nav {
     display: flex;

@@ -2,6 +2,10 @@
     margin-left:auto ;
     margin-right:auto ;
     width: 300px;
+    transition-duration: 0.5s;
+}
+.jour:hover{
+    padding: 5px;
 }
 .jour>div{
     display: flex;
@@ -13,9 +17,12 @@
 .jour>div:hover{
     background-color: rgb(254, 255, 236);
     color: rgb(101, 196, 101);
+    padding: 10px;
 }
 
 .column{
     display:flex;
     flex-direction: column;
 }
+
+

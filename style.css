@@ -1,21 +1,26 @@
-navbarLogo {
+body {
+    background-color: #231D21;
+}
+
+div .navbarLogo {
     display: flex;
     flex-direction: column;
+    background-color: orange;
+    width: 100%;
 }
 img {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 30%;
+    height: auto;
 }
 nav{
     display: flex;
     flex-direction: column;
-    margin-left: 200px;
 }
 nav ul {
     display: flex;
     align-content: flex-end;
-    margin-left: 100px;
 }
 
 .jour{

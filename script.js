@@ -40,6 +40,6 @@ day.addEventListener("mouseover", function () {
     }
 })
 day.addEventListener("mouseout", function () {
-    day.style.background = "white"
-    day.style.color ="black"
+    day.style.background = "#231D21 "
+    day.style.color ="white"
 })

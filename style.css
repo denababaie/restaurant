@@ -1,4 +1,7 @@
-
+body{
+    background-color: #231D21 ;
+    color: white;
+}
 div .navbarLogo {
     display: flex;
     flex-direction: column;
@@ -51,8 +54,8 @@ nav ul {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    border-top: orange solid 1px;
-    border-bottom: orange solid 1px;
+    border-top: #B48A78  solid 3px;
+    border-bottom: #B48A78  solid 3px;
     margin-bottom: 100px;
 }
 .column {
@@ -78,7 +81,7 @@ nav ul {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;  
-    border-top: orange solid 1px;
+    border-top: #B48A78  solid 3px;
 
 }
 

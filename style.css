@@ -67,6 +67,13 @@ nav ul {
     flex-direction: column;
     margin: 20px;
 }
+#buttonMail{
+    background-color:  #B48A78;
+    padding: 7px;
+}
+#inputMail{
+    padding: 7px;
+}
 .footerContact{
     width: 300px;
     margin-left: auto;
@@ -75,6 +82,10 @@ nav ul {
     justify-content: space-around;
     margin-bottom: 100px;
 }
+.titreSERVICE{
+    font-size: large;
+    font-weight: bolder;
+}
 .stay{
     margin-top: 50px;
     padding-top: 50px;
@@ -82,7 +93,12 @@ nav ul {
     margin-left: auto;
     margin-right: auto;  
     border-top: #B48A78  solid 3px;
+    font-size: large;
+    font-weight: bolder;
 
+}
+hr{
+   background-color: #553731 ;
 }
 
 #fat {

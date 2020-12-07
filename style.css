@@ -50,8 +50,8 @@ nav ul {
 }
 
 .jour>div:hover {
-    background-color: rgb(254, 255, 236);
-    color: rgb(101, 196, 101);
+    background-color: #231D21;
+    /* color:orange; */
     padding: 10px;
 }
 

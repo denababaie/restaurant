@@ -1,0 +1,41 @@
+
+.jour{
+    margin-left:auto ;
+    margin-right:auto ;
+    width: 300px;
+    transition-duration: 0.5s;
+}
+.jour:hover{
+    padding: 5px;
+}
+.jour>div{
+    display: flex;
+    justify-content: space-between;
+    transition-duration: 0.3s;
+    padding: 5px;
+    font-weight: bold;
+}
+.jour>div:hover{
+    background-color: rgb(254, 255, 236);
+    color: rgb(101, 196, 101);
+    padding: 10px;
+}
+
+.column{
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+

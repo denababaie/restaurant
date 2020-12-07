@@ -1,0 +1,10 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}

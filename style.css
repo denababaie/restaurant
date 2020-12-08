@@ -3,32 +3,30 @@ body {
     color: white;
 }
 
-div .navbarLogo {
+.absolute{
+    position: absolute;
+    left: 20px;
+}
+.box{
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+}
+body > div.box > div:nth-child(1){
+    text-decoration: none;    
+}
+.boutonNAV{
     display: flex;
     flex-direction: column;
-    background-color: orange;
-    width: 100%;
-
+    justify-content: center;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bolder;
+}
+img{
+    width: 80px;
 }
 
-img {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-
-}
-
-nav ul {
-    display: flex;
-    align-content: flex-end;
-
-}
 
 .jour {
     margin-left: auto;

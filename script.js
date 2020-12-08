@@ -48,7 +48,6 @@ day.addEventListener("mouseover", function () {
         closed()
     }
 })
-console.log("SALUT");
 day.addEventListener("mouseout", function () {
     day.style.background = " #1E1F20 "
     day.style.color = "white"

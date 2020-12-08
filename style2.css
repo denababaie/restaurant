@@ -346,3 +346,21 @@ h5 {
             filter: blur(2px);
         }
     }}
+    .searchBox{
+        display: flex;
+        flex-wrap: wrap;
+        height: 400px;
+        width: 100%;
+        background-color: whitesmoke;
+    }
+    .cal{
+        height: 100px;
+        width: 100px;
+        background-color: red;
+    }
+    .but{
+        margin-top: 10px;
+        width: 100px;
+        height: 60px;
+        border-radius: 10px;
+    }

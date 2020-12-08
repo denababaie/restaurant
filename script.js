@@ -17,7 +17,7 @@ day.addEventListener("mouseover", function () {
     function horaire(){
         if (h < 11) {
             closed()
-        } else if (h < 11 && m < 30) {
+        } else if (h <= 11 && m < 30) {
             closed()
         } else if (h == 11 && m > 30) {
             day.style.background = " rgb(101, 196, 101"

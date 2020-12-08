@@ -4,7 +4,6 @@ body {
     min-width: 320px;
     margin: auto;
 }
-
 h1{
     font-family: 'Playfair Display', serif;
     font-size: 90px;
@@ -12,6 +11,205 @@ h1{
     padding-top: 4%;
     color: black;
 }
+
+/*-------------------------------------------------NAVIGATION-BAR----------------------------------------------------------------*/  
+
+
+div .navbarLogo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+img {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+
+nav ul {
+    display: flex;
+    align-content: flex-end;
+
+}
+
+
+/*-------------------------------------------------CAROUSEL----------------------------------------------------------------*/  
+
+
+
+
+/*-------------------------------------------------ABOUT-US----------------------------------------------------------------*/  
+
+h2 {
+    margin-top: 7%;
+    font-family:'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 65px;
+  }
+  
+  .aboutus {
+    margin-top: 8%;
+  }
+  
+  .center {
+    display: flex;
+    text-align: justify;
+    color:white;
+    padding-bottom: 20%
+  }
+  
+  .images {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+  }
+  
+  .imagebackground {
+    position: relative;
+    top: 5%;
+    left: -20%;
+    /* width: 360px; */
+    width:330px;
+    height:414px;
+  }
+  
+  .imageontop{
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    /* width: 360px; */
+    width:330px;
+    height:414px;
+  
+  
+  }
+  
+  .texte {
+    padding-top: 0px;
+    margin-top: -10%;
+    margin-left: 30%;
+  }
+  
+  
+  .paragraphe {
+    padding-top: 7%;
+    color: white;
+    /*font-family: 'Playfair Display', serif ; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+  }
+  
+  
+    
+  
+   
+/*-------------------------------------------------OPENING-HOURS----------------------------------------------------------------*/  
+.jour {
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    transition-duration: 0.5s;
+}
+
+.jour:hover {
+    padding: 5px;
+}
+
+.jour>div {
+    display: flex;
+    justify-content: space-between;
+    transition-duration: 0.3s;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.jour>div:hover {
+    background-color: #231D21;
+    /* color:orange; */
+    padding: 10px;
+}
+
+.flexMENTION {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border-top: #B48A78 solid 3px;
+    border-bottom: #B48A78 solid 3px;
+    margin-bottom: 100px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.columnMention {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#buttonMail {
+    background-color: #B48A78;
+    padding: 7px;
+}
+
+#inputMail {
+    padding: 7px;
+}
+
+.footerContact {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.titreSERVICE {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.stay {
+    margin-top: 50px;
+    padding-top: 50px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: #B48A78 solid 3px;
+    font-size: large;
+    font-weight: bolder;
+
+}
+
+hr {
+    background-color: #553731;
+}
+
+#fat {
+    margin-top: 50px;
+    font-size: xx-large;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
 
 h2 {
     font-family: 'Playfair Display', serif;
@@ -31,18 +229,17 @@ font-family: 'Arapey', serif;
 } */
 
 
-h3{
-    position: absolute;
-    bottom: -599px;
-    left: -420px;
-    letter-spacing: 45px;
-    transform: rotate(-90deg);
-    font-size: 100px;
-    font-family: 'Playfair Display', serif;
-    color: #DAAE4D;
+
+h3 {
+    padding-bottom: 40px;
+    padding-top: 100px;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 40px;
+    text-align: center;
+
+}
 
 
-    } 
 
 
 h5  {
@@ -50,9 +247,17 @@ h5  {
 font-family: 'Playfair Display', serif;
 }
 
+
 .aboutmenu {
     width: 90%;
     padding: 0 15px ;
+
+.menu {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+
 }
 
 .card-img-top{
@@ -84,6 +289,7 @@ font-family: 'Playfair Display', serif;
 }
 
 .row {
+
     margin: 2% 0;
 }
 
@@ -102,6 +308,22 @@ font-family: 'Playfair Display', serif;
 
 
 .btn.btn-primary {
+
+    padding-left: 79px;
+}
+
+
+.starters {
+    padding-left: 165px;
+}
+
+.desserts {
+    padding-left: 165px;
+}
+
+.btn.btn-primary {
+    color: white;
+
     background-color: black;
     border-color: black;
 } 
@@ -135,6 +357,7 @@ font-family: 'Playfair Display', serif;
  
 }
 
+
 @media (min-width:576px) {
     .card-columns {
         column-count: 2;
@@ -162,6 +385,15 @@ font-family: 'Playfair Display', serif;
         height: 35vh;
     }
     
+
+.card-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+
 }
 @media (min-width:992px) {
     .card-columns {
@@ -175,6 +407,7 @@ font-family: 'Playfair Display', serif;
         height: 35vh;
     }
 
+
    
 }
 @media (min-width:1200px) {
@@ -185,6 +418,11 @@ font-family: 'Playfair Display', serif;
         font-size: normal;
         
     }
+=======
+.card:hover {
+    transform: scale(1.04);
+}
+
 
 .card-body {
         height: 30vh;
@@ -201,6 +439,7 @@ font-family: 'Playfair Display', serif;
     padding-left: 80%;
     padding-bottom: 10%;
 }
+
 
 /* IMAGE BOTTOM PAGE*/
 
@@ -284,4 +523,4 @@ font-family: 'Playfair Display', serif;
     100% { transform: scale(2) translateX(10px) translateY(0px); filter: blur(2px);}
   }
   
-  
+

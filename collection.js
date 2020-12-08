@@ -1,10 +1,14 @@
 const body = document.body
+const inpute = document.querySelector("#navbarSupportedContent > ul > li:nth-child(6) > input")
+inpute.type = "text"
+
 
 
 const collectionSTART = [{
         title: "Aberdeen Angus rib-eye",
         image: src = "./images/Screen Shot 2020-12-07 at 21.32.03.png",
         price: "€25,00",
+        
     },
     {
         title: "Red cabbage prawn",
@@ -22,7 +26,6 @@ const collectionSTART = [{
         price: "€25,00",
     },
 ]
-
 
 const collectionMAINDISHES = [{
         title: "Seasonal vegetable salad",
@@ -45,6 +48,9 @@ const collectionMAINDISHES = [{
         price: "€25,00",
     },
 ]
+
+
+
 const collectionDESSERTS = [{
         title: "Violet parfait",
         image: src = "./images/Screen Shot 2020-12-07 at 22.02.08.png",
@@ -79,10 +85,7 @@ container.appendChild(starterTITLE)
 const cardColumns = document.createElement("div")
 cardColumns.classList.add("card-columns")
 container.appendChild(cardColumns)
-
-
 //______________________________plat
-
 const container2 = document.createElement("div")
 container2.classList.add("container")
 body.appendChild(container2)
@@ -95,12 +98,7 @@ container2.appendChild(platTITLE)
 const cardColumns2 = document.createElement("div")
 cardColumns2.classList.add("card-columns")
 container2.appendChild(cardColumns2)
-
-
-
-
 //______________________________desserts
-
 const container3 = document.createElement("div")
 container3.classList.add("container")
 body.appendChild(container3)
@@ -108,60 +106,67 @@ body.appendChild(container3)
 const dessertsTITLE = document.createElement("h2")
 dessertsTITLE.classList.add("text-center")
 dessertsTITLE.innerHTML = "DESSERTS"
-container2.appendChild(dessertsTITLE)
+container3.appendChild(dessertsTITLE)
 
 const cardColumns3 = document.createElement("div")
 cardColumns3.classList.add("card-columns")
-container2.appendChild(cardColumns3)
+container3.appendChild(cardColumns3)
 
+for (let u = 0; u < collectionSTART.length; u++) {
+    inpute.addEventListener("keyup", function () {
+        let pattern = new RegExp(inpute.value, 'gmi')
+        let split = collectionSTART[u].title.split("")
+        let sentence = collectionSTART[u].title
+        if (sentence.match(pattern)) {
+            cardColumns.innerHTML = ""
+            enter()
+        }
+    })
 
+    function enter() {
+        const card = document.createElement("div")
+        card.classList.add("card")
+        cardColumns.appendChild(card)
 
-//______________________________________________________________________
-for (let u = 0; u < collectionMAINDISHES.length; u++) {
+        const img = document.createElement("img")
+        img.src = collectionSTART[u].image // image de notre collectionStart 
+        img.classList.add("card-img-top")
+        card.appendChild(img)
 
+        const cardBody = document.createElement("div")
+        cardBody.classList.add("card-body")
+        card.appendChild(cardBody)
 
-    const card = document.createElement("div")
-    card.classList.add("card")
-    cardColumns.appendChild(card)
+        const titre = document.createElement("h5")
+        titre.innerHTML = collectionSTART[u].title // titre de notre collectionSTART
+        titre.classList.add("card-title")
+        cardBody.appendChild(titre)
 
-    const img = document.createElement("img")
-    img.src = collectionMAINDISHES[u].image // image de notre collectionStart 
-    img.classList.add("card-img-top")
-    card.appendChild(img)
+        const prix = document.createElement("p")
+        prix.innerHTML = collectionSTART[u].price // Prix de notre collectionSTART 
+        prix.classList.add("card-text")
+        cardBody.appendChild(prix)
 
-    const cardBody = document.createElement("div")
-    cardBody.classList.add("card-body")
-    card.appendChild(cardBody)
+        const cardFooter = document.createElement("div")
+        cardFooter.classList.add("card-footer")
+        card.appendChild(cardFooter)
 
-    const titre = document.createElement("h5")
-    titre.innerHTML = collectionMAINDISHES[u].title // titre de notre collectionMAINDISHES
-    titre.classList.add("card-title")
-    cardBody.appendChild(titre)
-
-    const prix = document.createElement("p")
-    prix.innerHTML = collectionMAINDISHES[u].price // Prix de notre collectionMAINDISHES 
-    prix.classList.add("card-text")
-    cardBody.appendChild(prix)
-
-    const cardFooter = document.createElement("div")
-    cardFooter.classList.add("card-footer")
-    card.appendChild(cardFooter)
-
-    const boutonAdd = document.createElement("a")
-    boutonAdd.classList.add("btn")
-    boutonAdd.innerHTML = "add to cart"
-    cardFooter.appendChild(boutonAdd)
+        const boutonAdd = document.createElement("a")
+        boutonAdd.classList.add("btn")
+        boutonAdd.innerHTML = "add to cart"
+        cardFooter.appendChild(boutonAdd)
+    }
+    enter()
 }
 
-console.log('collectionSTART.length:', collectionSTART.length)
-for (let i = 0; i < collectionSTART.length; i++) {
 
+for (let i = 0; i < collectionMAINDISHES.length; i++) {
     const card = document.createElement("div")
     card.classList.add("card")
     cardColumns2.appendChild(card)
 
     const img = document.createElement("img")
-    img.src = collectionSTART[i].image // image de notre collectionStart 
+    img.src = collectionMAINDISHES[i].image // image de notre collectionMAINDISHES 
     img.classList.add("card-img-top")
     card.appendChild(img)
 
@@ -170,12 +175,12 @@ for (let i = 0; i < collectionSTART.length; i++) {
     card.appendChild(cardBody)
 
     const titre = document.createElement("h5")
-    titre.innerHTML = collectionSTART[i].title // titre de notre collectionStart
+    titre.innerHTML = collectionMAINDISHES[i].title // titre de notre collectionMAINDISHES
     titre.classList.add("card-title")
     cardBody.appendChild(titre)
 
     const prix = document.createElement("p")
-    prix.innerHTML = collectionSTART[i].price // Prix de notre collectionStart 
+    prix.innerHTML = collectionMAINDISHES[i].price // Prix de notre collectionMAINDISHES 
     prix.classList.add("card-text")
     cardBody.appendChild(prix)
 

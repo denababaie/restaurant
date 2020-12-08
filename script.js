@@ -14,15 +14,18 @@ day.addEventListener("mouseover", function () {
         document.querySelector("#fat > u").style.fontSize = " 40px"
         day.style.background = " red"
     }
-    function horaire(){
+
+    function horaire() {
         if (h < 11) {
             closed()
         } else if (h <= 11 && m < 30) {
             closed()
         } else if (h == 11 && m > 30) {
             day.style.background = " rgb(101, 196, 101"
-        } else if (h >= 12 && h <= 14) {
+        } else if (h >= 12 && h < 14) {
             day.style.background = " rgb(101, 196, 101"
+        } else if (h >= 14) {
+            closed()
         } else if (h >= 18) {
             day.style.background = " rgb(101, 196, 101"
         } else if (h >= 22 && m >= 30) {

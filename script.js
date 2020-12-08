@@ -14,33 +14,34 @@ day.addEventListener("mouseover", function () {
         document.querySelector("#fat > u").style.fontSize = " 40px"
         day.style.background = " red"
     }
+    function horaire(){
+        if (h < 11) {
+            closed()
+        } else if (h < 11 && m < 30) {
+            closed()
+        } else if (h == 11 && m > 30) {
+            day.style.background = " rgb(101, 196, 101"
+        } else if (h >= 12 && h <= 14) {
+            day.style.background = " rgb(101, 196, 101"
+        } else if (h >= 18) {
+            day.style.background = " rgb(101, 196, 101"
+        } else if (h >= 22 && m >= 30) {
+            closed()
+        }
+    }
     if (ladate.getDay() == 1) {
         closed()
     } else if (ladate.getDay() == 2) {
-        day.style.background = " rgb(101, 196, 101"
+        horaire()
     } else if (ladate.getDay() == 3) {
-        day.style.background = " rgb(101, 196, 101"
+        horaire()
     } else if (ladate.getDay() == 4) {
-        day.style.background = " rgb(101, 196, 101"
+        horaire()
     } else if (ladate.getDay() == 5) {
-        day.style.background = " rgb(101, 196, 101"
+        horaire()
     } else if (ladate.getDay() == 6) {
-        day.style.background = " rgb(101, 196, 101"
+        horaire()
     } else if (ladate.getDay() == 7) {
-        closed()
-    }
-    //____________________________
-    else if (h < 11) {
-        closed()
-    } else if (h < 11 && m < 30) {
-        closed()
-    } else if (h == 11 && m > 30) {
-        day.style.background = " rgb(101, 196, 101"
-    } else if (h >= 12 && h <= 14) {
-        day.style.background = " rgb(101, 196, 101"
-    } else if (h >= 18) {
-        day.style.background = " rgb(101, 196, 101"
-    } else if (h >= 22 && m >= 30) {
         closed()
     }
 })

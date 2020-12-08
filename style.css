@@ -1,6 +1,6 @@
 body {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #1E1F20;
     min-width: 320px;
     margin: auto;
 }
@@ -15,8 +15,8 @@ h1{
 .absolute{
     position: absolute;
     left: 20px;
-/*-------------------------------------------------NAVIGATION-BAR----------------------------------------------------------------*/  
 
+}
 
 .box{
     display: flex;
@@ -38,15 +38,6 @@ img{
     width: 80px;
 }
 
-
-
-
-/*-------------------------------------------------CAROUSEL----------------------------------------------------------------*/  
-
-
-
-
-/*-------------------------------------------------ABOUT-US----------------------------------------------------------------*/  
 
 h2 {
     margin-top: 7%;
@@ -240,7 +231,7 @@ font-family: 'Playfair Display', serif;
 .aboutmenu {
     width: 90%;
     padding: 0 15px ;
-
+}
 .menu {
     flex-direction: column;
     padding-left: 30px;
@@ -513,3 +504,4 @@ font-family: 'Playfair Display', serif;
   }
   
 
+}}

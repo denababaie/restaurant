@@ -2,13 +2,13 @@ const body = document.body
 const inpute = document.querySelector("#navbarSupportedContent > ul > li:nth-child(6) > input")
 inpute.type = "text"
 
-
+const searchBox = document.createElement("div")
+body.appendChild(searchBox)
 
 const collectionSTART = [{
         title: "Aberdeen Angus rib-eye",
         image: src = "./images/Screen Shot 2020-12-07 at 21.32.03.png",
         price: "€25,00",
-        
     },
     {
         title: "Red cabbage prawn",
@@ -72,6 +72,10 @@ const collectionDESSERTS = [{
         price: "€25,00",
     },
 ]
+let list = [collectionSTART,collectionMAINDISHES,collectionDESSERTS]
+for(let elem of list){
+    
+}
 //______________________________entrée
 const container = document.createElement("div")
 container.classList.add("container")
@@ -114,19 +118,31 @@ container3.appendChild(cardColumns3)
 
 for (let u = 0; u < collectionSTART.length; u++) {
     inpute.addEventListener("keyup", function () {
-        let pattern = new RegExp(inpute.value, 'gmi')
+        let pattern = new RegExp(inpute.value, 'gi')
         let split = collectionSTART[u].title.split("")
         let sentence = collectionSTART[u].title
         if (sentence.match(pattern)) {
-            cardColumns.innerHTML = ""
-            enter()
+            searchBox.innerHTML =""
+            enter(searchBox)
+            searchBox.style.width = "250px"
+            searchBox.style.marginLeft = "auto"
+            searchBox.style.marginRight = "auto"
+            const but = document.createElement("button")
+            but.classList.add("but")
+            but.innerHTML="close"
+            searchBox.style.textAlign = "center"
+            searchBox.appendChild(but)
+            but.addEventListener("click", function(){
+                searchBox.innerHTML =""
+                inpute.value = ""
+            })
         }
     })
 
-    function enter() {
+    function enter(x) {
         const card = document.createElement("div")
         card.classList.add("card")
-        cardColumns.appendChild(card)
+        x.appendChild(card)
 
         const img = document.createElement("img")
         img.src = collectionSTART[u].image // image de notre collectionStart 
@@ -156,74 +172,127 @@ for (let u = 0; u < collectionSTART.length; u++) {
         boutonAdd.innerHTML = "add to cart"
         cardFooter.appendChild(boutonAdd)
     }
-    enter()
+    enter(cardColumns)
 }
 
 
 for (let i = 0; i < collectionMAINDISHES.length; i++) {
-    const card = document.createElement("div")
-    card.classList.add("card")
-    cardColumns2.appendChild(card)
+        inpute.addEventListener("keyup", function () {
+        let pattern = new RegExp(inpute.value, 'gi')
+        let split = collectionSTART[i].title.split("")
+        let sentence = collectionSTART[i].title
+        if (sentence.match(pattern)) {
+            searchBox.innerHTML =""
+            plat(searchBox)
+            searchBox.style.width = "250px"
+            searchBox.style.marginLeft = "auto"
+            searchBox.style.marginRight = "auto"
+            const but = document.createElement("button")
+            but.classList.add("but")
+            but.innerHTML="close"
+            searchBox.style.textAlign = "center"
+            searchBox.appendChild(but)
+            but.addEventListener("click", function(){
+                searchBox.innerHTML =""
+                inpute.value = ""
+            })
+        }
+    })
 
-    const img = document.createElement("img")
-    img.src = collectionMAINDISHES[i].image // image de notre collectionMAINDISHES 
-    img.classList.add("card-img-top")
-    card.appendChild(img)
-
-    const cardBody = document.createElement("div")
-    cardBody.classList.add("card-body")
-    card.appendChild(cardBody)
-
-    const titre = document.createElement("h5")
-    titre.innerHTML = collectionMAINDISHES[i].title // titre de notre collectionMAINDISHES
-    titre.classList.add("card-title")
-    cardBody.appendChild(titre)
-
-    const prix = document.createElement("p")
-    prix.innerHTML = collectionMAINDISHES[i].price // Prix de notre collectionMAINDISHES 
-    prix.classList.add("card-text")
-    cardBody.appendChild(prix)
-
-    const cardFooter = document.createElement("div")
-    cardFooter.classList.add("card-footer")
-    card.appendChild(cardFooter)
-
-    const boutonAdd = document.createElement("a")
-    boutonAdd.classList.add("btn")
-    boutonAdd.innerHTML = "add to cart"
-    cardFooter.appendChild(boutonAdd)
+    plat(cardColumns2)
+    function plat(z) {
+        const card = document.createElement("div")
+        card.classList.add("card")
+        z.appendChild(card)
+    
+        const img = document.createElement("img")
+        img.src = collectionMAINDISHES[i].image // image de notre collectionMAINDISHES 
+        img.classList.add("card-img-top")
+        card.appendChild(img)
+    
+        const cardBody = document.createElement("div")
+        cardBody.classList.add("card-body")
+        card.appendChild(cardBody)
+    
+        const titre = document.createElement("h5")
+        titre.innerHTML = collectionMAINDISHES[i].title // titre de notre collectionMAINDISHES
+        titre.classList.add("card-title")
+        cardBody.appendChild(titre)
+    
+        const prix = document.createElement("p")
+        prix.innerHTML = collectionMAINDISHES[i].price // Prix de notre collectionMAINDISHES 
+        prix.classList.add("card-text")
+        cardBody.appendChild(prix)
+    
+        const cardFooter = document.createElement("div")
+        cardFooter.classList.add("card-footer")
+        card.appendChild(cardFooter)
+    
+        const boutonAdd = document.createElement("a")
+        boutonAdd.classList.add("btn")
+        boutonAdd.innerHTML = "add to cart"
+        cardFooter.appendChild(boutonAdd)
+    }
 }
 
 for (let i = 0; i < collectionDESSERTS.length; i++) {
-    const card = document.createElement("div")
-    card.classList.add("card")
-    cardColumns3.appendChild(card)
 
-    const img = document.createElement("img")
-    img.src = collectionDESSERTS[i].image // image de notre collectionDESSERTS 
-    img.classList.add("card-img-top")
-    card.appendChild(img)
-
-    const cardBody = document.createElement("div")
-    cardBody.classList.add("card-body")
-    card.appendChild(cardBody)
-
-    const titre = document.createElement("h5")
-    titre.innerHTML = collectionDESSERTS[i].title // titre de notre collectionDESSERTS
-    titre.classList.add("card-title")
-    cardBody.appendChild(titre)
-
-    const prix = document.createElement("p")
-    prix.innerHTML = collectionDESSERTS[i].price // Prix de notre collectionDESSERTS 
-    prix.classList.add("card-text")
-    cardBody.appendChild(prix)
-
-    const cardFooter = document.createElement("div")
-    cardFooter.classList.add("card-footer")
-    card.appendChild(cardFooter)
-
-    const boutonAdd = document.createElement("a")
-    boutonAdd.classList.add("btn")
-    boutonAdd.innerHTML = "add to cart"
-    cardFooter.appendChild(boutonAdd)
+        inpute.addEventListener("keyup", function () {
+        let pattern = new RegExp(inpute.value, 'gi')
+        let split = collectionDESSERTS[i].title.split("")
+        let sentence = collectionDESSERTS[i].title
+        if (sentence.match(pattern)) {
+            searchBox.innerHTML =""
+            desser(searchBox)
+            searchBox.style.width = "250px"
+            searchBox.style.marginLeft = "auto"
+            searchBox.style.marginRight = "auto"
+            const but = document.createElement("button")
+            but.classList.add("but")
+            but.innerHTML="close"
+            searchBox.style.textAlign = "center"
+            searchBox.appendChild(but)
+            but.addEventListener("click", function(){
+                searchBox.innerHTML =""
+                inpute.value = ""
+            })
+        }
+    }) 
+    desser(cardColumns3)
+    function desser(y) {
+        const card = document.createElement("div")
+        card.classList.add("card")
+        y.appendChild(card)
+    
+        const img = document.createElement("img")
+        img.src = collectionDESSERTS[i].image // image de notre collectionDESSERTS 
+        img.classList.add("card-img-top")
+        card.appendChild(img)
+    
+        const cardBody = document.createElement("div")
+        cardBody.classList.add("card-body")
+        card.appendChild(cardBody)
+    
+        const titre = document.createElement("h5")
+        titre.innerHTML = collectionDESSERTS[i].title // titre de notre collectionDESSERTS
+        titre.classList.add("card-title")
+        cardBody.appendChild(titre)
+    
+        const prix = document.createElement("p")
+        prix.innerHTML = collectionDESSERTS[i].price // Prix de notre collectionDESSERTS 
+        prix.classList.add("card-text")
+        cardBody.appendChild(prix)
+    
+        const cardFooter = document.createElement("div")
+        cardFooter.classList.add("card-footer")
+        card.appendChild(cardFooter)
+    
+        const boutonAdd = document.createElement("a")
+        boutonAdd.classList.add("btn")
+        boutonAdd.innerHTML = "add to cart"
+        cardFooter.appendChild(boutonAdd)
+    }
 }
+
+
+

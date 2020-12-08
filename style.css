@@ -12,36 +12,33 @@ h1{
     color: black;
 }
 
+.absolute{
+    position: absolute;
+    left: 20px;
 /*-------------------------------------------------NAVIGATION-BAR----------------------------------------------------------------*/  
 
 
-div .navbarLogo {
+.box{
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+}
+body > div.box > div:nth-child(1){
+    text-decoration: none;    
+}
+.boutonNAV{
     display: flex;
     flex-direction: column;
-    width: 100%;
-
+    justify-content: center;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bolder;
 }
-
-img {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
-}
-
-nav {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
+img{
+    width: 80px;
 }
 
 
-nav ul {
-    display: flex;
-    align-content: flex-end;
-
-}
 
 
 /*-------------------------------------------------CAROUSEL----------------------------------------------------------------*/  
@@ -106,7 +103,6 @@ h2 {
   .paragraphe {
     padding-top: 7%;
     color: white;
-    /*font-family: 'Playfair Display', serif ; */
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
   }
@@ -219,14 +215,7 @@ h2 {
     color: black;
 }
 
-/*h3{
-transform: rotate(-9deg); 
-padding-left:53% ;
-margin-top: -3.8%;
-font-size: 40px;
-color: black;
-font-family: 'Arapey', serif;
-} */
+
 
 
 
@@ -418,8 +407,8 @@ font-family: 'Playfair Display', serif;
         font-size: normal;
         
     }
-=======
-.card:hover {
+
+  .card:hover {
     transform: scale(1.04);
 }
 

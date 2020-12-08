@@ -17,7 +17,7 @@ day.addEventListener("mouseover", function () {
     function horaire(){
         if (h < 11) {
             closed()
-        } else if (h < 11 && m < 30) {
+        } else if (h <= 11 && m < 30) {
             closed()
         } else if (h == 11 && m > 30) {
             day.style.background = " rgb(101, 196, 101"
@@ -45,8 +45,9 @@ day.addEventListener("mouseover", function () {
         closed()
     }
 })
+console.log("SALUT");
 day.addEventListener("mouseout", function () {
-    day.style.background = "#231D21 "
+    day.style.background = " #1E1F20 "
     day.style.color = "white"
     document.querySelector("#fat > u").innerHTML = "Opening hours"
     document.querySelector("#fat > u").style.fontSize = " xx-large"

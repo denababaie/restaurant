@@ -133,14 +133,15 @@ i {
     padding: 7px;
 }
 .contactLinks {
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 35%;
 }
-.contactImg {
-    width: 25%;
-    height: 25%;
-    margin-right: auto;
-    margin-left: auto;
+.imagesContact {
+    margin-left: 35%;
+    z-index: 0;
+}
+ .contactImg {
+    width: 330px;
+    height: 414px;
 }
 
 #location {

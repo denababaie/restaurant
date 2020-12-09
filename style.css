@@ -128,8 +128,9 @@ img{
     font-weight: 900;
     font-size: 65px;
     color: #A48739;
-    margin-left: 42%;
-    margin-bottom: -2%;
+    margin-left: 19%;
+    margin-bottom: -5%;
+
 
 
 }
@@ -200,7 +201,7 @@ font-family:'Playfair Display', serif;
 font-size: 55px;
 font-weight: 800;
 letter-spacing: 19px;
-margin-top: 24%;
+margin-top: 10%;
 color: #A48739;
 margin-left: 129%;
 margin-bottom: -1.9%;
@@ -210,7 +211,8 @@ margin-bottom: -1.9%;
 .googlemaps{
     /* might need to get rid of padding left ; interferes with contact image*/
    margin-left: 109%; 
-   padding-top: 0% ;
+   padding-top: -10% ;
+
  filter: grayscale(100%);
  }
 

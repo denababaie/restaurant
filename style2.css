@@ -5,10 +5,10 @@ body {
     margin: auto;
 }
 
-.absolute{
+body > div.absolute > a > img{
     position: absolute;
     left: 20px;
-
+    width: 80px;
 }
 .panier{
     position: absolute;

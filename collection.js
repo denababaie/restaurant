@@ -184,6 +184,13 @@ function PAYMENT() {
     }
 
     function closed() {
+        setInterval(function(){ 
+            document.querySelector("body > div.panier").style.background = "red";
+        }, 1000);
+        setInterval(function(){ 
+            document.querySelector("body > div.panier").style.background = "white";
+        }, 1500);
+
         container.innerHTML = " Sorry we are closed... Because Kill is a best Coach."
         document.querySelector("body > div:nth-child(3) > div > div > h1").innerHTML = ""
         const days = [{

@@ -393,3 +393,55 @@ h5 {
         display: flex;
         justify-content: center;
     }
+
+ /*                                          FOOTER                                       */
+
+    .flexMENTION {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        background: rgb(30, 31, 32);
+        font-family: 'Open Sans', sans-serif;
+        font-size: 13px
+    }
+    
+    
+    .columnMention {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        font-size: 15px;
+        color: white;
+    
+    }
+    .conteneur{
+        margin-top: auto;
+      font-weight: bold;
+    }
+    .lieux {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 15px;
+        margin-left: auto;
+        width: 20%;
+        color: white;
+    
+    }
+    .nine{
+        margin-left:50%;
+        
+    
+    }
+    
+    .contact {
+        color: rgb(164, 135, 57);
+    }
+    
+    .adresse {
+        color: rgb(164, 135, 57);
+    
+    }
+    

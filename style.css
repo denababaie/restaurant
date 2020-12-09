@@ -1,32 +1,189 @@
+body {
+    color: white;
+    background-color: #1E1F20;
+    min-width: 320px;
+    margin: auto;
+}
 
-div .navbarLogo {
-    display: flex;
-    flex-direction: column;
-    background-color: orange;
-    width: 100%;
+h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 90px;
+    padding-left: 13%;
+    padding-top: 4%;
+    color: black;
 }
-img {
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
+
+/*-------------------------------------------------NAVIGATION-BAR----------------------------------------------------------------*/  
+
+
+.absolute{
+    position: absolute;
+    left: 20px;
+
 }
-nav{
+
+.box{
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+}
+body > div.box > div:nth-child(1){
+    text-decoration: none;    
+}
+.boutonNAV{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
 }
 nav li {
     display: flex;
     flex-direction: column;
     align-content: flex-end;
 }
+img{
+    width: 80px;
+} 
 
-.jour{
-    margin-left:auto ;
-    margin-right:auto ;
 
+/*-------------------------------------------------ABOUT-US----------------------------------------------------------------*/  
+
+
+.titleabout {
+    margin-top: 7%;
+    margin-left: 19%;
+    font-family:'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 65px;
+    color: white;
+  }
+  
+  .aboutus {
+    margin-top: 8%;
+  }
+  
+  .center {
+    display: flex;
+    text-align: justify;
+    color:white
+  }
+  
+  .images {
+    position: relative;
+    top: 0;
+    left: 0;
+    
+  }
+  
+  .imagebackground {
+    position: relative;
+    top: -7;
+    left: -10%;
+    /* width: 360px; */
+    width:330px;
+    height:414px;
+  
+  }
+  
+  .imageontop{
+    position: absolute;
+    top: 32%;
+    left: 60%;
+    /* width: 360px; */
+    width:330px;
+    height:414px;
+  }
+  
+  .texte {
+    padding-top: 0px;
+    margin-top: -0%;
+    margin-left: 30%;
+  }
+  
+  
+  .paragraphe {
+    padding-top: 7%;
+    color: white;
+    /*font-family: 'Playfair Display', serif ; */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+  }
+
+  #whoweare{
+    padding-bottom: 10%;
+
+  }
+/*-------------------------------------------------CONTACT--------------------------------------------------------------------------*/  
+
+#location {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*.contacttext  {
+    background-color: darkgray ;
+    opacity: 0.8;
+    width:380px;
+    color: white;
+} */
+
+.contacttitle {
+    font-family:'Playfair Display', serif;
+    font-size: 55px;
+    font-weight: 800;
+    color: white;
+    /*transform: rotate(90deg);*/
+}
+
+/*-------------------------------------------------GOOGLE-MAPS----------------------------------------------------------------*/  
+
+
+.locationtitle{
+font-family:'Playfair Display', serif;
+font-size: 55px;
+font-weight: 800;
+letter-spacing: 13px;
+color: #A48739;
+/*margin-left: 65%; */
+margin-bottom: -1.9%;
+}
+
+
+.googlemaps{
+    /* might need to get rid of padding left ; interferes with contact image*/
+   padding-left: 54%; 
+ filter: grayscale(100%);
+ }
+
+ 
+ .streetname{
+    color: #A48739;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    display: flex;
+ }
+  
+
+   
+/*-------------------------------------------------OPENING-HOURS----------------------------------------------------------------*/  
+
+#fat{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jour {
+    margin-left: auto;
+    margin-right: auto;
     width: 300px;
     transition-duration: 0.5s;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .jour:hover {
@@ -42,30 +199,50 @@ nav li {
 }
 
 .jour>div:hover {
-    background-color: rgb(254, 255, 236);
-    color: rgb(101, 196, 101);
+    background-color: #231D21;
+    /* color:orange; */
     padding: 10px;
 }
-.flexMENTION{
+
+
+/*-------------------------------------------------FOOTER--------------------------------------------------------------------*/  
+
+
+
+.flexMENTION {
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
-    border-top: orange solid 1px;
-    border-bottom: orange solid 1px;
-    margin-bottom: 100px;
+    width: 100%;
+    background: grey;
+    border-top: #A48739 solid 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px
+    
 }
+
 .column {
     display: flex;
     flex-direction: column;
 }
-.columnMention{
+
+.columnMention {
     display: flex;
     flex-direction: column;
     margin: 20px;
 }
-.footerContact{
+
+#buttonMail {
+    background-color: #B48A78;
+    padding: 7px;
+}
+
+#inputMail {
+    padding: 7px;
+}
+
+.footerContact {
     width: 300px;
     margin-left: auto;
     margin-right: auto;
@@ -73,30 +250,44 @@ nav li {
     justify-content: space-around;
     margin-bottom: 100px;
 }
-.stay{
+
+.titreSERVICE {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.stay {
     margin-top: 50px;
     padding-top: 50px;
     width: fit-content;
     margin-left: auto;
-    margin-right: auto;  
-    border-top: orange solid 1px;
+    margin-right: auto;
+    border-top: #B48A78 solid 3px;
+    font-size: large;
+    font-weight: bolder;
 
+}
+
+hr {
+    background-color: #553731;
 }
 
 #fat {
     margin-top: 50px;
     font-size: xx-large;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 
-h2 {
-    padding-top: 100px;
-    font-family: 'Playfair Display SC', serif;
-    font-size: 95px;
-    text-align: center;
-    padding-bottom: -60px;
+/*-------------------------------------------------MENU--------------------------------------------------------------------*/  
 
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    margin-bottom: 4%;
+    padding-top: 3%; 
+    color: black;
 }
 
 
@@ -106,67 +297,291 @@ h3 {
     font-family: 'Playfair Display SC', serif;
     font-size: 40px;
     text-align: center;
-  
+
 }
 
-/*h4 {
-    font-size: 100px;
-    font-family: 'Playfair Display SC', serif;
-    letter-spacing: 42px;
-    color: seagreen;
-    transform: rotate(-90deg);
-margin-right: 1200px;
-margin-top: -90px;
-display: inline-block; 
-}*/
+
+h5  {
+
+font-family: 'Playfair Display', serif;
+}
+
+
+.aboutmenu {
+    width: 90%;
+    padding: 0 15px ;
+}
+
+.menu {
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+
+}
+
+.card-img-top{
+    height: 30vh;
+    width: 100%;
+    object-fit: fit;
+}
+
+.row{
+   margin-bottom: 320px;
+}
 
 .card {
-    margin-right: 30px;
-
+    background-color: white;
+    border: 1px solid #fff;
+    margin-top: 10px ;
+    border-color: no-color;
 }
 
-.menu  {
-flex-direction: column;
-padding-left: 30px;
-padding-right: 20px;
-padding-bottom: 100px;
-}
-
-
-.row {
-padding-left: 79px;
-}
-
-
-.starters {
-padding-left: 165px;
-}
-
-.desserts {
-    padding-left: 165px;
-    }
-
-.btn.btn-primary{
-    color: white;
-    background-color: black;
-    border-color: black;
-    font-family: 'Playfair Display SC', serif;
-    align-content: center;
-
-}
-.card-text {
-font-family: 'Playfair Display', serif;
-font-size: 14px;
-}
-.card-title{
-    font-family: 'Playfair Display', serif;
-}
 
 .card:hover {
     transform: scale(1.04);
 } 
 
-.btn.btn-primary:hover {
-    background-color: darkgreen;
-    border-color: darkgreen;
+.card-text {
+    font-size:  13px;
+    font-family: 'Arapey', serif;
+
 }
+
+.row {
+
+    margin: 2% 0;
+}
+
+.card-body {
+    background-color:white;
+}
+
+
+
+.card-footer {
+    background-color: white;
+    margin-top: -70px;
+    padding-left:26% ;
+}
+
+
+
+.btn.btn-primary {
+
+    padding-left: 79px;
+}
+
+
+.starters {
+    padding-left: 165px;
+}
+
+.desserts {
+    padding-left: 165px;
+}
+
+.btn.btn-primary {
+    color: white;
+
+    background-color: black;
+    border-color: black;
+} 
+
+.btn.btn-primary:hover {
+    background-color: whitesmoke;
+    border-color: black;
+    color: black;
+} 
+
+.menubottomtext  {
+    font-family: 'Arapey', serif;
+    font-size: 21px;
+    color: black;
+
+} 
+
+@media (max-width:156px) {
+    .card-columns {
+      column-count: 1;
+    }
+
+    .card-body {
+        height: 30vh;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }  
+
+ 
+}
+
+
+@media (min-width:576px) {
+    .card-columns {
+        column-count: 2;
+      }
+  
+      .card-text{
+          font-size: normal;
+      }
+  
+      .card-body {
+          height: 35vh;
+      }
+    
+    
+}
+  @media (min-width:768px) {
+    .card-columns {
+      column-count: 2;
+    }
+    .card-text{
+        font-size: large;
+    }
+
+    .card-body {
+        height: 35vh;
+    }
+    
+
+.card-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+
+}
+@media (min-width:992px) {
+    .card-columns {
+      column-count: 2;
+    }
+    .card-text{
+        font-size: normal;
+        
+    }
+    .card-body {
+        height: 35vh;
+    }
+
+
+   
+}
+@media (min-width:1200px) {
+    .card-columns {
+      column-count: 4;
+    }
+    .card-text{
+        font-size: normal;
+        
+    }
+
+  .card:hover {
+    transform: scale(1.04);
+}
+
+
+.card-body {
+        height: 30vh;
+    }
+    
+
+.imageandtext{
+    flex-direction: row;
+    align-content: flex-end;
+}
+.menubottomtext  {
+    flex-direction: row;
+    align-content: flex-end;
+    padding-left: 80%;
+    padding-bottom: 10%;
+}
+
+
+/*-------------------------------------------------CSS-ANIMATION-IMAGE-MENU-----------------------------------------------------------*/  
+
+
+  #wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 499px;
+    height: 268px;
+    box-shadow: 0px 0px 30px 5px rgba(0,0,0,.3);
+    border: 10px solid #fff;
+  }
+  
+  /********BACKGROUND********/
+  .background, .dust, .foreground, .midground  {
+    position: absolute;
+    margin-left: -80px;
+    z-index: 1;
+    animation-name: background;
+    animation-duration: 40s;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  
+  
+  @keyframes background {
+    0% {transform:translateX(0px) translateY(0px);}
+    100% {transform:translateX(-130px) translateY(0px);}
+  
+  }
+    
+    
+  /********FOREGROUND********/  
+    .foreground {
+    z-index: 3;
+    -moz-animation-name: foreground;
+    -ms-animation-name: foreground;
+    -o-animation-name: foreground;
+    -webkit-animation-name: foreground;
+    animation-name: foreground;
+  }
+  
+  @keyframes foreground { 
+    0% { transform: scale(1); }
+    100% { transform: scale(1.2) translateX(-60px); filter: blur(10px); }
+  }
+  
+  
+  /********MIDGROUND********/
+  .midground {
+    z-index:2;
+    -moz-animation-name: midground;
+    -ms-animation-name: midground;
+    -o-animation-name: midground;
+    -webkit-animation-name: midground;
+    animation-name: midground;
+  }
+  
+  @keyframes midground { 
+    0% { transform: scale(1); }
+    100% { transform: scale(1.4) translateX(-100px) translateY(0px) rotate(5deg); }
+  }
+  
+  
+  
+  /********DUST********/
+  .dust {
+    z-index: 4;
+    -moz-animation-name: dust;
+    -ms-animation-name: dust;
+    -o-animation-name: dust;
+    -webkit-animation-name: dust;
+    animation-name: dust;
+  }
+  @keyframes dust { 
+    0% { transform: scale(1); }
+    100% { transform: scale(2) translateX(10px) translateY(0px); filter: blur(2px);}
+  }
+  
+
+}}

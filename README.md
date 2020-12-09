@@ -33,6 +33,9 @@ The navigation bar's "about" us and "contact" buttons aren't functional.
 We would've liked it if by clicking on them the visitor would've gotten redirected 
 to the bottom of the page.
 
+**Responsiveness**
+An overall responsiveness improvement is needed for the website.
+
 **PROJECT LINK**
 [99 Restaurant](https://albeadamit.github.io/restaurant/)
 

@@ -92,8 +92,8 @@ for (let i = 0; i < collection.length; i++) {
             searchBox.style.width = "300px"
             searchBox.style.marginLeft = "auto"
             searchBox.style.marginRight = "auto"
-            searchBox.style.display ="flex"
-            searchBox.style.justifyContent ="center"
+            searchBox.style.display = "flex"
+            searchBox.style.justifyContent = "center"
 
             const buttonClosed = document.createElement("button")
             buttonClosed.classList.add("but")
@@ -184,15 +184,15 @@ function PAYMENT() {
     function envoi() {
         function randomNumber(min, max) {
             return Math.floor(Math.random() * (max - min)) + min + 1;
-          }
-          container.innerHTML ="Votre commande arrive dans ",randomNumber(15, 45)+ " minutes."
+        }
+        container.innerHTML = "Votre commande arrive dans ", randomNumber(15, 45) + " minutes."
     }
 
     function closed() {
-        setInterval(function(){ 
+        setInterval(function () {
             document.querySelector("body > div.panier").style.background = "red";
         }, 1000);
-        setInterval(function(){ 
+        setInterval(function () {
             document.querySelector("body > div.panier").style.background = "white";
         }, 1500);
         document.querySelector("body > div:nth-child(3) > div > div > h3").style.display = "none"
@@ -261,12 +261,13 @@ function PAYMENT() {
             envoi()
         } else if (h >= 12 && h < 14) {
             envoi()
-        } else if (h >= 14) {
+        } else if (h >= 14 && h <= 18) {
             closed()
-        } else if (h >= 18) {
+        } else if (h >= 22 && m >= 31) {
+            closed()
+        } else if (h >= 18 && h <= 22) {
             envoi()
-        } else if (h >= 22 && m >= 30) {
-            closed()
+        } else if (h == 22 && m <= 30) {
+            envoi()
         }
-    }
-}
+    }}

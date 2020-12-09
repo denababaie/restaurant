@@ -24,12 +24,14 @@ day.addEventListener("mouseover", function () {
             day.style.background = "#adba9c"
         } else if (h >= 12 && h < 14) {
             day.style.background = "#adba9c"
-        } else if (h >= 14) {
+        } else if (h >= 14 && h <= 18) {
             closed()
-        } else if (h >= 18) {
+        } else if (h >= 22 && m >= 31) {
+            closed()
+        } else if (h >= 18 && h <= 22) {
             day.style.background = "#adba9c"
-        } else if (h >= 22 && m >= 30) {
-            closed()
+        } else if (h == 22 && m <= 30) {
+            day.style.background = "#adba9c"
         }
     }
     if (ladate.getDay() == 1) {

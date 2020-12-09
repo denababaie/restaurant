@@ -78,11 +78,9 @@ const collection = [{
 const container = document.createElement("div")
 container.classList.add("container")
 body.appendChild(container)
-
 const cardColumns = document.createElement("div")
 cardColumns.classList.add("card-columns")
 container.appendChild(cardColumns)
-
 for (let i = 0; i < collection.length; i++) {
     inpute.addEventListener("keyup", function () {
         let pattern = new RegExp(inpute.value, 'gi')
@@ -104,87 +102,68 @@ for (let i = 0; i < collection.length; i++) {
             plat(searchBox)
         }
     })
-
     plat(cardColumns)
 
     function plat(x) {
         const card = document.createElement("div")
         card.classList.add("card")
         x.appendChild(card)
-
         const img = document.createElement("img")
         img.src = collection[i].image // image de notre collectionStart 
         img.classList.add("card-img-top")
         card.appendChild(img)
-
         const cardBody = document.createElement("div")
         cardBody.classList.add("card-body")
         card.appendChild(cardBody)
-
         const titre = document.createElement("h5")
         titre.innerHTML = collection[i].title // titre de notre collectionSTART
         titre.classList.add("card-title")
         cardBody.appendChild(titre)
-
         const prix = document.createElement("p")
         prix.innerHTML = collection[i].price // Prix de notre collectionSTART 
         prix.classList.add("card-text")
         cardBody.appendChild(prix)
-
         const cardFooter = document.createElement("div")
         cardFooter.classList.add("card-footer")
         card.appendChild(cardFooter)
-
         const boutonAdd = document.createElement("a")
         boutonAdd.classList.add("btn")
         boutonAdd.innerHTML = "add to cart"
         boutonAdd.addEventListener("click", function () {
-
             const choix = document.createElement("div")
             const tr = document.createElement("tr")
             const td = document.createElement("td")
             const minus = document.createElement("button")
-
-          
-
             panier.style.display = "block"
             panier.style.height = "fit-content"
             panier.style.padding = "20px"
             choix.style.display = "flex"
-           
-
             tr.innerHTML = collection[i].title + " "
             td.innerHTML = collection[i].price + " "
-            result += collection[i].dollar 
-            priceRESULT.innerHTML = "<button onclick =test()>PAY</button>"+" "+"Total : "+ " € " + result 
-
+            result += collection[i].dollar
+            priceRESULT.innerHTML = "<button onclick =test()>PAY</button>" + " " + "Total : " + " € " + result
             minus.innerHTML = "-"
-
-           
-
             panier.appendChild(choix)
             table.appendChild(tr)
             tr.appendChild(td)
             td.appendChild(minus)
-            
-            
-        
             minus.addEventListener("click", function () {
                 choix.innerHTML = ""
                 result -= collection[i].dollar
-                priceRESULT.innerHTML = "<button onclick =test()>PAY</button>"+" "+"Total : "+ " € " + result  
+                priceRESULT.innerHTML = "<button onclick =test()>PAY</button>" + " " + "Total : " + " € " + result
                 table.removeChild(tr)
-                if(result == 0){
+                if (result == 0) {
                     panier.style.display = "none"
                 }
             })
-            
+
         })
         cardFooter.appendChild(boutonAdd)
 
 
     }
 }
-function test(){
+
+function test() {
     alert("Le meilleur de tout les coach va payer, met toi bien... A l'aise... ")
 }

@@ -11,7 +11,7 @@ body > div.absolute > a > img{
     width: 80px;
 }
 .panier{
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 80px;
     width: fit-content;
@@ -24,7 +24,6 @@ body > div.absolute > a > img{
     
     
 }
-
 .box{
     display: flex;
     justify-content: flex-end;
@@ -41,7 +40,7 @@ body > div.box > div:nth-child(1){
     justify-content: center;
     margin-right: 50px;
     font-size: large;
-    font-weight: bolder;
+    font-weight: lighter;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -383,6 +382,7 @@ h5 {
     background-color: red;
 }
 .but{
+   background-color: #DAAE4D;
     margin-top: 10px;
     width: 100px;
     height: 60px;

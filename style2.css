@@ -84,15 +84,14 @@ font-family: 'Arapey', serif;
 }
 h3 {
     position: absolute;
-    bottom: -599px;
-    left: -420px;
+    bottom: -209px;
+    left: -428px;
     letter-spacing: 45px;
     transform: rotate(-90deg);
     font-size: 100px;
     font-family: 'Playfair Display', serif;
     color: #DAAE4D;
-
-
+    opacity: 0.9;
 }
 
 
@@ -152,12 +151,13 @@ h5 {
 
 
 
-.btn.btn-primary {
+.btn{
     background-color: black;
     border-color: black;
+    color: white;
 }
 
-.btn.btn-primary:hover {
+.btn:hover {
     background-color: whitesmoke;
     border-color: black;
     color: black;
@@ -249,153 +249,147 @@ h5 {
         height: 30vh;
     }
 
+/*------------------------------------------------ANIMATION-CSS---------------------------------------------*/
+.imageandtext {
+    padding-bottom: 109px;
+    margin-top: -80px;
+}
 
-    .imageandtext {
-        flex-direction: row;
-        align-content: flex-end;
+.menubottomtext {
+    flex-direction: row;
+    align-content: flex-end;
+    padding-left: 80%;
+}
+
+
+/* IMAGE BOTTOM PAGE*/
+
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    position: relative;
+    overflow: hidden;
+    width: 999px;
+    height: 238px;
+
+
+}
+
+/********BACKGROUND********/
+.background,
+.dust,
+.foreground,
+.midground {
+    position: absolute;
+    margin-left: 40px; 
+    z-index: 1;
+    animation-name: background;
+    animation-duration: 37s;
+    animation-delay: 0ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1000;
+}
+
+
+
+
+@keyframes background {
+    0% {
+        transform: translateX(0px) translateY(0px);
     }
 
-    .menubottomtext {
-        flex-direction: row;
-        align-content: flex-end;
-        padding-left: 80%;
-        padding-bottom: 10%;
+    100% {
+        transform: translateX(-130px) translateY(0px);
     }
 
-    /* IMAGE BOTTOM PAGE*/
+}
 
 
-    #wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        position: relative;
-        overflow: hidden;
-        width: 499px;
-        height: 268px;
-        box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, .3);
-        border: 10px solid #fff;
+/********FOREGROUND********/
+.foreground {
+    z-index: 3;
+    -moz-animation-name: foreground;
+    -ms-animation-name: foreground;
+    -o-animation-name: foreground;
+    -webkit-animation-name: foreground;
+    animation-name: foreground;
+}
+
+@keyframes foreground {
+    0% {
+        transform: scale(1);
     }
 
-    /********BACKGROUND********/
-    .background,
-    .dust,
-    .foreground,
-    .midground {
-        position: absolute;
-        margin-left: -80px;
-        z-index: 1;
-        animation-name: background;
-        animation-duration: 40s;
-        animation-delay: 0ms;
-        animation-fill-mode: forwards;
-        animation-iteration-count: 1;
+    100% {
+        transform: scale(1.2) translateX(-60px);
+        filter: blur(10px);
+    }
+}
+
+
+/********MIDGROUND********/
+.midground {
+    z-index: 2;
+    -moz-animation-name: midground;
+    -ms-animation-name: midground;
+    -o-animation-name: midground;
+    -webkit-animation-name: midground;
+    animation-name: midground;
+}
+
+@keyframes midground {
+    0% {
+        transform: scale(1);
     }
 
+    100% {
+        transform: scale(1.4) translateX(-100px) translateY(0px) rotate(5deg);
+    }
+}
 
-    @keyframes background {
-        0% {
-            transform: translateX(0px) translateY(0px);
-        }
 
-        100% {
-            transform: translateX(-130px) translateY(0px);
-        }
 
+/********DUST********/
+.dust {
+    z-index: 10;
+    -moz-animation-name: dust;
+    -ms-animation-name: dust;
+    -o-animation-name: dust;
+    -webkit-animation-name: dust;
+    animation-name: dust;
+}
+
+@keyframes dust {
+    0% {
+        transform: scale(1);
     }
 
-
-    /********FOREGROUND********/
-    .foreground {
-        z-index: 3;
-        -moz-animation-name: foreground;
-        -ms-animation-name: foreground;
-        -o-animation-name: foreground;
-        -webkit-animation-name: foreground;
-        animation-name: foreground;
+    100% {
+        transform: scale(2) translateX(10px) translateY(0px);
+        filter: blur(2px);
     }
+}}
+.searchBox{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.cal{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.but{
+    margin-top: 10px;
+    width: 100px;
+    height: 60px;
+    border-radius: 10px;
+}
 
-    @keyframes foreground {
-        0% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(1.2) translateX(-60px);
-            filter: blur(10px);
-        }
-    }
-
-
-    /********MIDGROUND********/
-    .midground {
-        z-index: 2;
-        -moz-animation-name: midground;
-        -ms-animation-name: midground;
-        -o-animation-name: midground;
-        -webkit-animation-name: midground;
-        animation-name: midground;
-    }
-
-    @keyframes midground {
-        0% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(1.4) translateX(-100px) translateY(0px) rotate(5deg);
-        }
-    }
-
-
-
-    /********DUST********/
-    .dust {
-        z-index: 4;
-        -moz-animation-name: dust;
-        -ms-animation-name: dust;
-        -o-animation-name: dust;
-        -webkit-animation-name: dust;
-        animation-name: dust;
-    }
-
-    @keyframes dust {
-        0% {
-            transform: scale(1);
-        }
-
-        100% {
-            transform: scale(2) translateX(10px) translateY(0px);
-            filter: blur(2px);
-        }
-    }}
-    .searchBox{
-        display: flex;
-        flex-wrap: wrap;
-        height: 400px;
-        width: 100%;
-        background-color: whitesmoke;
-    }
-    .cal{
-        height: 100px;
-        width: 100px;
-        background-color: red;
-    }
-    .but{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 10px;
-        width: 100px;
-        height: 30px;
-        border-radius: 10px;
-        background-color: #DAAE4D;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-    }
-
- /*                                          FOOTER                                       */
-
+/*------------------------------------------------FOOTER----------------------------------------------*/
     .flexMENTION {
         display: flex;
         flex-wrap: wrap;
@@ -418,7 +412,7 @@ h5 {
     }
     .conteneur{
         margin-top: auto;
-      font-weight: bold;
+        font-weight: lighter;
     }
     .lieux {
         display: flex;
@@ -438,10 +432,12 @@ h5 {
     
     .contact {
         color: rgb(164, 135, 57);
-    }
+        font-weight: bold;
+}
     
     .adresse {
         color: rgb(164, 135, 57);
+        font-weight: bold;
     
     }
     

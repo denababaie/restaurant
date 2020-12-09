@@ -390,7 +390,6 @@ h5 {
 }
 
 /*------------------------------------------------FOOTER----------------------------------------------*/
-
     .flexMENTION {
         display: flex;
         flex-wrap: wrap;
@@ -434,7 +433,7 @@ h5 {
     .contact {
         color: rgb(164, 135, 57);
         font-weight: bold;
-    }
+}
     
     .adresse {
         color: rgb(164, 135, 57);

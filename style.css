@@ -1,9 +1,10 @@
 body {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #1E1F20;
     min-width: 320px;
     margin: auto;
 }
+
 h1{
     font-family: 'Playfair Display', serif;
     font-size: 90px;
@@ -15,47 +16,45 @@ h1{
 /*-------------------------------------------------NAVIGATION-BAR----------------------------------------------------------------*/  
 
 
-div .navbarLogo {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.absolute{
+    position: absolute;
+    left: 20px;
 
 }
 
-img {
+.box{
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    height: auto;
+    justify-content: flex-end;
+    height: 80px;
 }
-
-nav {
+body > div.box > div:nth-child(1){
+    text-decoration: none;    
+}
+.boutonNAV{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    font-size: large;
+    font-weight: bolder;
     font-family: 'Open Sans', sans-serif;
-    font-weight: lighter;
 }
 
-
-nav ul {
-    display: flex;
-    align-content: flex-end;
-
-}
-
-
-/*-------------------------------------------------CAROUSEL----------------------------------------------------------------*/  
-
-
+img{
+    width: 80px;
+} 
 
 
 /*-------------------------------------------------ABOUT-US----------------------------------------------------------------*/  
 
-h2 {
+
+.titleabout {
     margin-top: 7%;
+    margin-left: 19%;
     font-family:'Playfair Display', serif;
     font-weight: 900;
     font-size: 65px;
+    color: white;
   }
   
   .aboutus {
@@ -65,8 +64,7 @@ h2 {
   .center {
     display: flex;
     text-align: justify;
-    color:white;
-    padding-bottom: 20%
+    color:white
   }
   
   .images {
@@ -78,27 +76,26 @@ h2 {
   
   .imagebackground {
     position: relative;
-    top: 5%;
-    left: -20%;
+    top: -7;
+    left: -10%;
     /* width: 360px; */
     width:330px;
     height:414px;
+  
   }
   
   .imageontop{
     position: absolute;
-    top: 35%;
-    left: 49%;
+    top: 32%;
+    left: 60%;
     /* width: 360px; */
     width:330px;
     height:414px;
-  
-  
   }
   
   .texte {
     padding-top: 0px;
-    margin-top: -10%;
+    margin-top: -0%;
     margin-left: 30%;
   }
   
@@ -110,17 +107,79 @@ h2 {
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
   }
+
+  #whoweare{
+    padding-bottom: 10%;
+
+  }
+/*-------------------------------------------------CONTACT--------------------------------------------------------------------------*/  
+
+#location {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*.contacttext  {
+    background-color: darkgray ;
+    opacity: 0.8;
+    width:380px;
+    color: white;
+} */
+
+.contacttitle {
+    font-family:'Playfair Display', serif;
+    font-size: 55px;
+    font-weight: 800;
+    color: white;
+    /*transform: rotate(90deg);*/
+}
+
+/*-------------------------------------------------GOOGLE-MAPS----------------------------------------------------------------*/  
+
+
+.locationtitle{
+font-family:'Playfair Display', serif;
+font-size: 55px;
+font-weight: 800;
+letter-spacing: 13px;
+color: #A48739;
+/*margin-left: 65%; */
+margin-bottom: -1.9%;
+}
+
+
+.googlemaps{
+    /* might need to get rid of padding left ; interferes with contact image*/
+   padding-left: 54%; 
+ filter: grayscale(100%);
+ }
+
+ 
+ .streetname{
+    color: #A48739;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    display: flex;
+ }
   
-  
-    
-  
+
    
 /*-------------------------------------------------OPENING-HOURS----------------------------------------------------------------*/  
+
+#fat{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .jour {
     margin-left: auto;
     margin-right: auto;
     width: 300px;
     transition-duration: 0.5s;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .jour:hover {
@@ -141,75 +200,60 @@ h2 {
     padding: 10px;
 }
 
+
+/*-------------------------------------------------FOOTER--------------------------------------------------------------------*/  
+
+
+
 .flexMENTION {
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
-    border-top: #B48A78 solid 3px;
-    border-bottom: #B48A78 solid 3px;
-    margin-bottom: 100px;
+    width: 100%;
+    background: rgb(99, 92, 92);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-}
 
 .columnMention {
     display: flex;
     flex-direction: column;
     margin: 20px;
-}
+    font-size: 15px;
 
-#buttonMail {
-    background-color: #B48A78;
-    padding: 7px;
 }
-
-#inputMail {
-    padding: 7px;
+.conteneur{
+    margin-top: auto;
+  font-weight: bold;
 }
-
-.footerContact {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+.lieux {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 100px;
-}
-
-.titreSERVICE {
-    font-size: large;
-    font-weight: bolder;
-}
-
-.stay {
-    margin-top: 50px;
-    padding-top: 50px;
-    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
     margin-left: auto;
-    margin-right: auto;
-    border-top: #B48A78 solid 3px;
-    font-size: large;
-    font-weight: bolder;
+    width: 20%;
+
+}
+.nine{
+    margin-left:50%;
+    
 
 }
 
-hr {
-    background-color: #553731;
+.contact {
+    color: rgb(164, 135, 57);
 }
 
-#fat {
-    margin-top: 50px;
-    font-size: xx-large;
-    padding-bottom: 50px;
-    text-align: center;
+.adresse {
+    color: rgb(164, 135, 57);
+
 }
 
 
+/*-------------------------------------------------MENU--------------------------------------------------------------------*/  
 
 h2 {
     font-family: 'Playfair Display', serif;
@@ -218,16 +262,6 @@ h2 {
     padding-top: 3%; 
     color: black;
 }
-
-/*h3{
-transform: rotate(-9deg); 
-padding-left:53% ;
-margin-top: -3.8%;
-font-size: 40px;
-color: black;
-font-family: 'Arapey', serif;
-} */
-
 
 
 h3 {
@@ -240,8 +274,6 @@ h3 {
 }
 
 
-
-
 h5  {
 
 font-family: 'Playfair Display', serif;
@@ -251,6 +283,7 @@ font-family: 'Playfair Display', serif;
 .aboutmenu {
     width: 90%;
     padding: 0 15px ;
+}
 
 .menu {
     flex-direction: column;
@@ -418,8 +451,8 @@ font-family: 'Playfair Display', serif;
         font-size: normal;
         
     }
-=======
-.card:hover {
+
+  .card:hover {
     transform: scale(1.04);
 }
 
@@ -441,7 +474,7 @@ font-family: 'Playfair Display', serif;
 }
 
 
-/* IMAGE BOTTOM PAGE*/
+/*-------------------------------------------------CSS-ANIMATION-IMAGE-MENU-----------------------------------------------------------*/  
 
 
   #wrapper {
@@ -524,3 +557,4 @@ font-family: 'Playfair Display', serif;
   }
   
 
+}}

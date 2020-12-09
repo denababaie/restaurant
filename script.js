@@ -10,9 +10,9 @@ if (m < 10) {
 }
 day.addEventListener("mouseover", function () {
     function closed() {
-        document.querySelector("#fat > u").innerHTML = "We are closed"
-        document.querySelector("#fat > u").style.fontSize = " 40px"
-        day.style.background = " red"
+        document.querySelector("#fat > u").innerHTML = "Currently closed"
+        document.querySelector("#fat > u").style.fontSize = "40px"
+        day.style.background = "#b2924e"
     }
 
     function horaire() {
@@ -21,13 +21,13 @@ day.addEventListener("mouseover", function () {
         } else if (h <= 11 && m < 30) {
             closed()
         } else if (h == 11 && m > 30) {
-            day.style.background = " rgb(101, 196, 101"
+            day.style.background = "#adba9c"
         } else if (h >= 12 && h < 14) {
-            day.style.background = " rgb(101, 196, 101"
+            day.style.background = "#adba9c"
         } else if (h >= 14) {
             closed()
         } else if (h >= 18) {
-            day.style.background = " rgb(101, 196, 101"
+            day.style.background = "#adba9c"
         } else if (h >= 22 && m >= 30) {
             closed()
         }
@@ -49,7 +49,7 @@ day.addEventListener("mouseover", function () {
     }
 })
 day.addEventListener("mouseout", function () {
-    day.style.background = " #1E1F20 "
+    day.style.background = " #62615f "
     day.style.color = "white"
     document.querySelector("#fat > u").innerHTML = "Opening hours"
     document.querySelector("#fat > u").style.fontSize = " xx-large"

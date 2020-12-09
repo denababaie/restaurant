@@ -4,6 +4,7 @@ const inpute = document.querySelector("body > div.box > div:nth-child(4) > input
 const searchBox = document.createElement("div")
 body.appendChild(searchBox)
 let result = 0;
+
 const collection = [{
         title: "Aberdeen Angus rib-eye",
         image: src = "./images/Screen Shot 2020-12-07 at 21.32.03.png",
@@ -91,6 +92,9 @@ for (let i = 0; i < collection.length; i++) {
             searchBox.style.width = "300px"
             searchBox.style.marginLeft = "auto"
             searchBox.style.marginRight = "auto"
+            searchBox.style.display ="flex"
+            searchBox.style.justifyContent ="center"
+
             const buttonClosed = document.createElement("button")
             buttonClosed.classList.add("but")
             buttonClosed.innerHTML = "close"
@@ -98,6 +102,10 @@ for (let i = 0; i < collection.length; i++) {
                 searchBox.innerHTML = ""
                 inpute.value = ""
             })
+            searchBox.style.display = "flex"
+            searchBox.style.flexWrap = "wrap"
+
+
             searchBox.appendChild(buttonClosed)
             plat(searchBox)
         }
@@ -137,11 +145,13 @@ for (let i = 0; i < collection.length; i++) {
             panier.style.display = "block"
             panier.style.height = "fit-content"
             panier.style.padding = "20px"
+            panier.style.opacity = "80%"
             choix.style.display = "flex"
+
             tr.innerHTML = collection[i].title + " "
             td.innerHTML = collection[i].price + " "
             result += collection[i].dollar
-            priceRESULT.innerHTML = "<button onclick =test()>PAY</button>" + " " + "Total : " + " € " + result
+            priceRESULT.innerHTML = "<button onclick =PAYMENT()>PAY</button>" + " " + "Total : " + " € " + result
             minus.innerHTML = "-"
             panier.appendChild(choix)
             table.appendChild(tr)
@@ -150,20 +160,113 @@ for (let i = 0; i < collection.length; i++) {
             minus.addEventListener("click", function () {
                 choix.innerHTML = ""
                 result -= collection[i].dollar
-                priceRESULT.innerHTML = "<button onclick =test()>PAY</button>" + " " + "Total : " + " € " + result
+                priceRESULT.innerHTML = "<button onclick =PAYMENT()>PAY</button>" + " " + "Total : " + " € " + result
                 table.removeChild(tr)
                 if (result == 0) {
                     panier.style.display = "none"
                 }
             })
-
         })
         cardFooter.appendChild(boutonAdd)
-
-
     }
 }
+let ladate = new Date()
+let h = ladate.getHours();
+if (h < 10) {
+    h = "0" + h
+}
+let m = ladate.getMinutes();
+if (m < 10) {
+    m = "0" + m
+}
 
-function test() {
-    alert("Le meilleur de tout les coach va payer, met toi bien... A l'aise... ")
+function PAYMENT() {
+    function envoi() {
+        function randomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min + 1;
+          }
+          container.innerHTML ="Votre commande arrive dans ",randomNumber(15, 45)+ " minutes."
+    }
+
+    function closed() {
+        setInterval(function(){ 
+            document.querySelector("body > div.panier").style.background = "red";
+        }, 1000);
+        setInterval(function(){ 
+            document.querySelector("body > div.panier").style.background = "white";
+        }, 1500);
+        document.querySelector("body > div:nth-child(3) > div > div > h3").style.display = "none"
+        container.innerHTML = " Sorry we are closed... Because Kill is a best Coach."
+        document.querySelector("body > div:nth-child(3) > div > div > h1").innerHTML = ""
+        const days = [{
+            day: "Monday ",
+            time: "Close "
+        }, {
+            day: "tuesday ",
+            time: "11:30 - 14:00 / 18:00 - 22:30 "
+        }, {
+            day: "Wednesday ",
+            time: "11:30 - 14:00 / 18:00 - 22:30 "
+        }, {
+            day: "Thursday ",
+            time: "11:30 - 14:00 / 18:00 - 22:30 "
+        }, {
+            day: "Friday ",
+            time: "11:30 - 14:00 / 18:00 - 22:30 "
+        }, {
+            day: "Saturday ",
+            time: "11:30 - 14:00 / 18:00 - 22:30 "
+        }, {
+            day: "Sunday ",
+            time: "Close"
+        }]
+        const boxPrinci = document.createElement("div")
+        const tableTime = document.createElement("table")
+        for (let elem of days) {
+            container.appendChild(boxPrinci)
+            boxPrinci.style.width = "fit-content"
+            boxPrinci.style.marginLeft = "auto"
+            boxPrinci.style.marginRight = "auto"
+            boxPrinci.appendChild(tableTime)
+            const tr = document.createElement("tr")
+            tableTime.appendChild(tr)
+            tr.innerHTML = elem.day
+            const td = document.createElement("td")
+            tr.appendChild(td)
+            td.innerHTML = elem.time
+        }
+    }
+    if (ladate.getDay() == 1) {
+        closed()
+    } else if (ladate.getDay() == 2) {
+        horaire()
+    } else if (ladate.getDay() == 3) {
+        horaire()
+    } else if (ladate.getDay() == 4) {
+        horaire()
+    } else if (ladate.getDay() == 5) {
+        horaire()
+    } else if (ladate.getDay() == 6) {
+        horaire()
+    } else if (ladate.getDay() == 7) {
+        closed()
+    }
+
+    function horaire() {
+        if (h < 11) {
+            closed()
+        } else if (h <= 11 && m < 30) {
+            closed()
+        } else if (h == 11 && m > 30) {
+            envoi()
+        } else if (h >= 12 && h < 14) {
+            envoi()
+        } else if (h >= 14) {
+            closed()
+        } else if (h >= 18) {
+            envoi()
+        } else if (h >= 22 && m >= 30) {
+            closed()
+        }
+    }
 }

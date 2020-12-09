@@ -11,7 +11,7 @@ body > div.absolute > a > img{
     width: 80px;
 }
 .panier{
-    position: absolute;
+    position: fixed;
     right: 0px;
     top: 80px;
     width: fit-content;
@@ -24,7 +24,6 @@ body > div.absolute > a > img{
     
     
 }
-
 .box{
     display: flex;
     justify-content: flex-end;

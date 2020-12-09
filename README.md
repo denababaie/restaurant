@@ -8,7 +8,7 @@ The restaurant needed a webpage with a take-out ordering page.
 
 ## How ?
 
-We started out by making a [mockup](https://www.canva.com/design/DAEPrup5J4w/BncNalsDaQT6Lottj7u0Jg/view#6).
+We started out by making a [mockup](https://www.canva.com/design/DAEPrup5J4w/BncNalsDaQT6Lottj7u0Jg/view#1).
 Which helped us start off with the project.
 To make sure tasks were correctly done and split between
 team members, we decided to create a Trello.

@@ -142,7 +142,9 @@ for (let i = 0; i < collection.length; i++) {
             panier.style.display = "block"
             panier.style.height = "fit-content"
             panier.style.padding = "20px"
+            panier.style.opacity = "80%"
             choix.style.display = "flex"
+
             tr.innerHTML = collection[i].title + " "
             td.innerHTML = collection[i].price + " "
             result += collection[i].dollar
@@ -155,7 +157,7 @@ for (let i = 0; i < collection.length; i++) {
             minus.addEventListener("click", function () {
                 choix.innerHTML = ""
                 result -= collection[i].dollar
-                priceRESULT.innerHTML = "<button onclick =test()>PAY</button>" + " " + "Total : " + " € " + result
+                priceRESULT.innerHTML = "<button onclick =PAYMENT()>PAY</button>" + " " + "Total : " + " € " + result
                 table.removeChild(tr)
                 if (result == 0) {
                     panier.style.display = "none"
@@ -190,7 +192,7 @@ function PAYMENT() {
         setInterval(function(){ 
             document.querySelector("body > div.panier").style.background = "white";
         }, 1500);
-
+        document.querySelector("body > div:nth-child(3) > div > div > h3").style.display = "none"
         container.innerHTML = " Sorry we are closed... Because Kill is a best Coach."
         document.querySelector("body > div:nth-child(3) > div > div > h1").innerHTML = ""
         const days = [{

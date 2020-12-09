@@ -92,6 +92,9 @@ for (let i = 0; i < collection.length; i++) {
             searchBox.style.width = "300px"
             searchBox.style.marginLeft = "auto"
             searchBox.style.marginRight = "auto"
+            searchBox.style.display ="flex"
+            searchBox.style.justifyContent ="center"
+
             const buttonClosed = document.createElement("button")
             buttonClosed.classList.add("but")
             buttonClosed.innerHTML = "close"

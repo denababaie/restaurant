@@ -122,27 +122,34 @@ img{
     font-weight: 900;
     font-size: 65px;
     color: #A48739;
-    margin-left: 65%;
+    margin-left: 55%;
 }
 i {
     color: white;
     background-color: #A48739;
-    border: transparent 1px thin;
+    border: #A48739 3px thin;
     border-radius: 100%;
     margin-left: 5%;
     padding: 7px;
 }
-.contactLinks {
+.centerContact {
     margin-left: 35%;
+    position: relative; 
 }
-.imagesContact {
-    margin-left: 35%;
-    z-index: 0;
+.centerContact img { 
+    display: block; 
 }
+.centerContact .fa-download { 
+    position: absolute; 
+    bottom:0; 
+    left:0; 
+}
+
  .contactImg {
     width: 330px;
     height: 414px;
 }
+
 
 #location {
     padding-top: 10%;

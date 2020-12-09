@@ -132,6 +132,7 @@ img{
     margin-bottom: -5%;
 
 
+
 }
 
 i {
@@ -211,6 +212,7 @@ margin-bottom: -1.9%;
     /* might need to get rid of padding left ; interferes with contact image*/
    margin-left: 109%; 
    padding-top: -10% ;
+
  filter: grayscale(100%);
  }
 

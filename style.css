@@ -58,7 +58,7 @@ img{
     font-family:'Playfair Display', serif;
     font-weight: 900;
     font-size: 65px;
-    color: #A48739;
+    color: white;
   }
   
   .aboutus {
@@ -117,32 +117,59 @@ img{
 
   }
 /*-------------------------------------------------CONTACT--------------------------------------------------------------------------*/  
+
+.centerContact{
+    padding-top: 3.5%;
+}
+
+
 .titleContact {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 65px;
     color: #A48739;
-    margin-left: 65%;
+    margin-left: 19%;
+    margin-bottom: -5%;
+
+
+
 }
+
 i {
     color: white;
     background-color: #A48739;
     border: transparent 1px thin;
-    border-radius: 100%;
-    margin-left: 5%;
-    padding: 7px;
+    border-radius: 50%;
+    margin: 3.2%;
+    padding: 17px;
+    font-size: 32px;
+    text-align: center;
+    width:70px;
+    height: 70px;
 }
+
+
+
+i:hover {
+    opacity: 0.7;
+  }
+  
 .contactLinks {
-    margin-left: 35%;
+    margin-top: -300px;
+    margin-left: 40.5%;
+    
 }
 .imagesContact {
     margin-left: 35%;
     z-index: 0;
 }
  .contactImg {
-    width: 330px;
-    height: 414px;
+    padding-top: 10%;
+    width: 400px;
+    height: 564px;
+    margin-left: -30%;
 }
+
 
 #location {
     padding-top: 10%;
@@ -173,40 +200,43 @@ i {
 font-family:'Playfair Display', serif;
 font-size: 55px;
 font-weight: 800;
-letter-spacing: 13px;
+letter-spacing: 19px;
+margin-top: 10%;
 color: #A48739;
-/*margin-left: 65%; */
+margin-left: 129%;
 margin-bottom: -1.9%;
 }
 
 
 .googlemaps{
     /* might need to get rid of padding left ; interferes with contact image*/
-   padding-left: 54%; 
+   margin-left: 109%; 
+   padding-top: -10% ;
+
  filter: grayscale(100%);
  }
 
  
- .streetname{
-    color: #A48739;
-    font-size: 17px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    display: flex;
- }
-  
 
    
 /*-------------------------------------------------OPENING-HOURS----------------------------------------------------------------*/  
 
+
+.openingbox {
+    font-family: 'Open Sans', sans-serif;  
+    font-size: 17px;
+    margin-left: -50px;
+}
+
 #fat{
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 .jour {
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
+    width: 400px;
     transition-duration: 0.5s;
     font-family: 'Open Sans', sans-serif;
 
@@ -241,9 +271,9 @@ margin-bottom: -1.9%;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background: rgb(99, 92, 92);
+    background: #424242;
     font-family: 'Open Sans', sans-serif;
-    font-size: 13px
+    font-size: 13px;
 }
 
 
@@ -256,7 +286,6 @@ margin-bottom: -1.9%;
 }
 .conteneur{
     margin-top: auto;
-  font-weight: bold;
 }
 .lieux {
     display: flex;
@@ -279,6 +308,7 @@ margin-bottom: -1.9%;
 
 .adresse {
     color: rgb(164, 135, 57);
+
 
 }
 

@@ -1,9 +1,10 @@
 body {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: #1E1F20;
     min-width: 320px;
     margin: auto;
 }
+
 h1{
     font-family: 'Playfair Display', serif;
     font-size: 90px;
@@ -12,11 +13,14 @@ h1{
     color: black;
 }
 
+/*-------------------------------------------------NAVIGATION-BAR----------------------------------------------------------------*/  
+
+
 .absolute{
     position: absolute;
     left: 20px;
-/*-------------------------------------------------NAVIGATION-BAR----------------------------------------------------------------*/  
 
+}
 
 .box{
     display: flex;
@@ -33,26 +37,24 @@ body > div.box > div:nth-child(1){
     margin-right: 50px;
     font-size: large;
     font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
 }
+
 img{
     width: 80px;
-}
-
-
-
-
-/*-------------------------------------------------CAROUSEL----------------------------------------------------------------*/  
-
-
+} 
 
 
 /*-------------------------------------------------ABOUT-US----------------------------------------------------------------*/  
 
-h2 {
+
+.titleabout {
     margin-top: 7%;
+    margin-left: 19%;
     font-family:'Playfair Display', serif;
     font-weight: 900;
     font-size: 65px;
+    color: white;
   }
   
   .aboutus {
@@ -62,8 +64,7 @@ h2 {
   .center {
     display: flex;
     text-align: justify;
-    color:white;
-    padding-bottom: 20%
+    color:white
   }
   
   .images {
@@ -75,27 +76,26 @@ h2 {
   
   .imagebackground {
     position: relative;
-    top: 5%;
-    left: -20%;
+    top: -7;
+    left: -10%;
     /* width: 360px; */
     width:330px;
     height:414px;
+  
   }
   
   .imageontop{
     position: absolute;
-    top: 35%;
-    left: 49%;
+    top: 32%;
+    left: 60%;
     /* width: 360px; */
     width:330px;
     height:414px;
-  
-  
   }
   
   .texte {
     padding-top: 0px;
-    margin-top: -10%;
+    margin-top: -0%;
     margin-left: 30%;
   }
   
@@ -103,20 +103,83 @@ h2 {
   .paragraphe {
     padding-top: 7%;
     color: white;
+    /*font-family: 'Playfair Display', serif ; */
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
   }
+
+  #whoweare{
+    padding-bottom: 10%;
+
+  }
+/*-------------------------------------------------CONTACT--------------------------------------------------------------------------*/  
+
+#location {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*.contacttext  {
+    background-color: darkgray ;
+    opacity: 0.8;
+    width:380px;
+    color: white;
+} */
+
+.contacttitle {
+    font-family:'Playfair Display', serif;
+    font-size: 55px;
+    font-weight: 800;
+    color: white;
+    /*transform: rotate(90deg);*/
+}
+
+/*-------------------------------------------------GOOGLE-MAPS----------------------------------------------------------------*/  
+
+
+.locationtitle{
+font-family:'Playfair Display', serif;
+font-size: 55px;
+font-weight: 800;
+letter-spacing: 13px;
+color: #A48739;
+/*margin-left: 65%; */
+margin-bottom: -1.9%;
+}
+
+
+.googlemaps{
+    /* might need to get rid of padding left ; interferes with contact image*/
+   padding-left: 54%; 
+ filter: grayscale(100%);
+ }
+
+ 
+ .streetname{
+    color: #A48739;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    display: flex;
+ }
   
-  
-    
-  
+
    
 /*-------------------------------------------------OPENING-HOURS----------------------------------------------------------------*/  
+
+#fat{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .jour {
     margin-left: auto;
     margin-right: auto;
     width: 300px;
     transition-duration: 0.5s;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 .jour:hover {
@@ -137,15 +200,22 @@ h2 {
     padding: 10px;
 }
 
+
+/*-------------------------------------------------FOOTER--------------------------------------------------------------------*/  
+
+
+
 .flexMENTION {
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
-    width: fit-content;
-    border-top: #B48A78 solid 3px;
-    border-bottom: #B48A78 solid 3px;
-    margin-bottom: 100px;
+    width: 100%;
+    background: grey;
+    border-top: #A48739 solid 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px
+    
 }
 
 .column {
@@ -206,6 +276,7 @@ hr {
 }
 
 
+/*-------------------------------------------------MENU--------------------------------------------------------------------*/  
 
 h2 {
     font-family: 'Playfair Display', serif;
@@ -214,9 +285,6 @@ h2 {
     padding-top: 3%; 
     color: black;
 }
-
-
-
 
 
 h3 {
@@ -229,8 +297,6 @@ h3 {
 }
 
 
-
-
 h5  {
 
 font-family: 'Playfair Display', serif;
@@ -240,6 +306,7 @@ font-family: 'Playfair Display', serif;
 .aboutmenu {
     width: 90%;
     padding: 0 15px ;
+}
 
 .menu {
     flex-direction: column;
@@ -430,7 +497,7 @@ font-family: 'Playfair Display', serif;
 }
 
 
-/* IMAGE BOTTOM PAGE*/
+/*-------------------------------------------------CSS-ANIMATION-IMAGE-MENU-----------------------------------------------------------*/  
 
 
   #wrapper {
@@ -513,3 +580,4 @@ font-family: 'Playfair Display', serif;
   }
   
 
+}}

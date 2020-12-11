@@ -53,6 +53,6 @@ day.addEventListener("mouseover", function () {
 day.addEventListener("mouseout", function () {
     day.style.background = " #62615f "
     day.style.color = "white"
-    document.querySelector("#fat > u").innerHTML = "Opening hours"
+    document.querySelector("#fat > u").innerHTML = "We are open"
     document.querySelector("#fat > u").style.fontSize = " xx-large"
 })

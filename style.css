@@ -294,11 +294,10 @@ margin-bottom: -1.9%;
     font-size: 15px;
     margin-left: auto;
     width: 20%;
-
 }
+
 .nine{
     margin-left:50%;
-    
 
 }
 
@@ -308,9 +307,33 @@ margin-bottom: -1.9%;
 
 .adresse {
     color: rgb(164, 135, 57);
+}
 
+
+.footercontact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 25px;
+    margin-left: 25%;
+    margin-top: 3%;
+    
+}
+
+a {
+    color: rgb(164, 135, 57);
+}
+
+.footericon {
+    margin-left: 25%;
+}
+
+a:hover {
+    color: whitesmoke;
+    cursor:pointer;
 
 }
+
 
 
 /*-------------------------------------------------MENU--------------------------------------------------------------------*/  

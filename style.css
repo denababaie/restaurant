@@ -120,20 +120,34 @@ img{
 
 .centerContact{
     padding-top: 3.5%;
+    padding-left: 3%;
 }
 
+.twotitles {
+    letter-spacing: 5.5px;
+} 
 
 .titleContact {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 65px;
     color: #A48739;
-    margin-left: 19%;
-    margin-bottom: -5%;
-
-
+    margin-left: 16.5%;
+    margin-bottom: -7%;
 
 }
+
+
+.findus {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: 65px;
+    color: #A48739;
+    margin-top: 3.2%;
+    margin-left: 43.2%;
+    margin-bottom: -10%;
+} 
+
 
 i {
     color: white;
@@ -146,6 +160,7 @@ i {
     text-align: center;
     width:70px;
     height: 70px;
+    margin-right: 0px;
 }
 
 
@@ -155,12 +170,12 @@ i:hover {
   }
   
 .contactLinks {
-    margin-top: -300px;
-    margin-left: 40.5%;
+    margin-top: -87px;
+    margin-left: 9.4%;
     
 }
 .imagesContact {
-    margin-left: 35%;
+    margin-left: 33%;
     z-index: 0;
 }
  .contactImg {
@@ -196,27 +211,27 @@ i:hover {
 /*-------------------------------------------------GOOGLE-MAPS----------------------------------------------------------------*/  
 
 
-.locationtitle{
+/*.locationtitle{
+display: flex;
+flex-direction: row;
 font-family:'Playfair Display', serif;
-font-size: 55px;
+font-size: 15px;
 font-weight: 800;
-letter-spacing: 19px;
-margin-top: 10%;
+/*letter-spacing: 21px; */
+/*margin-left: 129%;
+margin-top: -0%;
 color: #A48739;
-margin-left: 129%;
 margin-bottom: -1.9%;
-}
+}*/
+
 
 
 .googlemaps{
     /* might need to get rid of padding left ; interferes with contact image*/
    margin-left: 109%; 
-   padding-top: -10% ;
-
+   margin-top: -120% ;
  filter: grayscale(100%);
  }
-
- 
 
    
 /*-------------------------------------------------OPENING-HOURS----------------------------------------------------------------*/  
@@ -225,11 +240,18 @@ margin-bottom: -1.9%;
 .openingbox {
     font-family: 'Open Sans', sans-serif;  
     font-size: 17px;
-    margin-left: -50px;
+    margin-left: 0%;
+    padding-bottom: 100px;
+    margin-top: -160px;
+    margin-right: 0;
 }
 
 #fat{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 30px;
+    padding-left: 40%;
+    padding-bottom: 3.5% ;
     
 }
 

@@ -36,6 +36,11 @@ to the bottom of the page.
 **Responsiveness**
 An overall responsiveness improvement is needed for the website.
 
+**UX Design**
+* To improve user experience, the Menu search bar should be place on the active page itself and not in the navigation bar.
+* Improve "opening" & "closing" hours' overall UX Design.
+
+
 **PROJECT LINK**
 [99 Restaurant](https://albeadamit.github.io/restaurant/)
 

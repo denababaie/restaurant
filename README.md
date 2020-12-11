@@ -36,6 +36,10 @@ to the bottom of the page.
 **Responsiveness**
 An overall responsiveness improvement is needed for the website.
 
+**Add Favicon**
+
+**Add Title**
+
 **PROJECT LINK**
 [99 Restaurant](https://albeadamit.github.io/restaurant/)
 
